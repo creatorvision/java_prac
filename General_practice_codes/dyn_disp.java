@@ -20,21 +20,23 @@ class dyn_disp{
 				System.out.print(s.substring(i));
 				System.out.println(s.substring(0,i));
 					
-				try {
+				/*try {
 				Runtime.getRuntime().exec("clear");
 				} catch(IOException ioe){
 					ioe.printStackTrace();
-				}
+				}*/
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(1500);
 				} catch (InterruptedException ex) {
 					Thread.currentThread().interrupt();
 				}
 
+				if(i<s.length()-1){
 				final String ANSI_CLS = "\u001b[2J";
 		        final String ANSI_HOME = "\u001b[H";
 		        System.out.print(ANSI_CLS + ANSI_HOME);
 		        System.out.flush();
+		    	}
 			}
 	}
 }
