@@ -11,9 +11,9 @@ import java.lang.*;
 
 class check_eo {
 
-	int i;
+	long i;
 
-	public check_eo(int i)
+	public check_eo(long i)
 	{
 		this.i=i;
 		check();
@@ -40,7 +40,7 @@ class evenodd {
 		
 		System.out.println("Enter a number :");
 		Scanner sc= new Scanner (System.in);
-		int i=sc.nextInt();
+		long i=sc.nextLong();
 
 		check_eo c= new check_eo(i);
 	}
