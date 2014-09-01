@@ -117,8 +117,13 @@ class Stack_client{
 		System.out.println("Enter the elements that you want to push in Stack_2 :");
 		while(true)
 		{
-			if(s2.isFull())  // here if we don't give this if condition for break the infinite loop will run 
-				break;		// and thus we will get unreachable statement error (checked by compiler).
+			if(s2.isFull())
+			{
+				System.out.println(" Stack is Full now.");
+				break;
+			}  
+			// here if we don't give this if condition for break the infinite loop will run 
+			// and thus we will get unreachable statement error (checked by compiler).
 			s2.push(sc.nextInt());
 		}
 		s2.display();
